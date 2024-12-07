@@ -182,7 +182,7 @@ img {
 }
 @media (min-resolution: 192dpi) {
     .first-section {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(..images/1.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/i1.jpg);
     }
   }
 @media screen and (min-width: 768px) {
@@ -785,48 +785,25 @@ input:focus + .imgg {
     margin-bottom: 24px;
 }
 .lbl {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
 }
 .spn {
-    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 16px; 
     height: 16px; 
     border: 1px solid rgba(46, 47, 66, 0.4); 
     border-radius: 2px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    display: inline-flex; 
-    align-items: center; 
-    justify-content: center; 
     fill: transparent;
-}
-input:checked + .lbl .spn { 
-    background-color: #404bbf; 
-    border: none;
-    fill: #F4F4FD;
-}
-.dv-chckbx {
-    margin-bottom: 24px;
-}
-.lbl {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: #8e8f99;
-}
-.spn {
-    margin-right: 8px;
-    width: 16px; 
-    height: 16px; 
-    border: 1px solid rgba(46, 47, 66, 0.4); 
-    border-radius: 2px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    display: inline-flex; 
-    align-items: center; 
-    justify-content: center; 
-    fill: transparent;
+    flex-shrink: 0;
 }
 input:checked + .lbl .spn { 
     background-color: #404bbf; 
